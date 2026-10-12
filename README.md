@@ -2,7 +2,7 @@
 
 An AI GitHub Repository Investigator that reads a bounded slice of a public repository and produces an evidence-backed engineering risk report.
 
-**Live Demo:** Add the deployed frontend URL here after deployment.
+**Live Demo:** https://repo-pilot-khaki.vercel.app/
 
 ## Architecture
 
