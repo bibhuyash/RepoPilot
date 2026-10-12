@@ -1,0 +1,9 @@
+[
+  {"name":"hard-coded credential","path":"config.py","code":"api_key = \"1234567890abcdef\"","expected":"Potential hard-coded credential"},
+  {"name":"SQL injection","path":"db.py","code":"cursor.execute(f\"SELECT * FROM users WHERE id={user_id}\")","expected":"Possible SQL injection"},
+  {"name":"missing HTTP timeout","path":"client.py","code":"requests.get(url)","expected":"HTTP request without timeout"},
+  {"name":"unbounded retry","path":"worker.py","code":"while True:\n    retry()","expected":"Unbounded retry loop"},
+  {"name":"weak input validation","path":"routes.py","code":"user_id = request.args['user_id']","expected":"Unvalidated request input"},
+  {"name":"unsafe shell","path":"task.py","code":"subprocess.run(command, shell=True)","expected":"Unsafe shell execution"},
+  {"name":"healthy simple code","path":"math.py","code":"def add(a: int, b: int) -> int:\n    return a + b","expected":null}
+]
